@@ -1,0 +1,115 @@
+-------------------- index.html --------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Amrutvahini college of Engineering</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="box">
+    <h2>Welcome to Our College</h2>
+    <p>This is simple college website made for practical exam.</p>
+</div>
+
+</body>
+</html>
+
+
+-------------------- about.html --------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>About College</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="box">
+    <h2>About Us</h2>
+    <p>Our college provides engineering education and good facilities.</p>
+</div>
+
+</body>
+</html>
+
+
+-------------------- contact.html --------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Contact Us</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="box">
+    <h2>Contact Details</h2>
+    <p>Email: college@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+</div>
+
+</body>
+</html>
+
+
+-------------------- style.css --------------------
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    background: #003366;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    background: #0055aa;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+}

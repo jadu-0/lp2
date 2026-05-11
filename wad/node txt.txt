@@ -1,0 +1,49 @@
+node command
+node -v
+npm -v
+npm init -y
+npm install express
+node server.js
+
+----------------------------------------------------------
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to Node.js Website</h1>
+
+    <p>This is a static website served using Node.js.</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------
+style.css
+body{
+    font-family: Arial;
+    text-align: center;
+    margin-top: 100px;
+    background-color: lightblue;
+}
+
+h1{
+    color: darkblue;
+}
+---------------------------------------------------------------------------------
+server.js
+const express = require('express');
+const app = express();
+
+app.use(express.static(__dirname));
+
+app.listen(3000,()=>{
+    console.log("server running on port 3000");
+    console.log('Website Link: http://localhost:3000');
+
+});
+----------------------------------------------------------------------
+

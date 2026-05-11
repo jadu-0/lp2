@@ -1,0 +1,28 @@
+1)open the Docker Desktop
+
+2)then open the Docker hub in that
+
+3)then search the openjdk in that
+
+4)click on OpenJDK and copy that tag
+
+5) now open command prompt
+6) docker --version
+
+7)docker images
+
+8) docker ps
+
+9)docker pull OpenJDK:copiedtag
+
+10)docker run --name JAVA -it -d OpenJDK:copiedtag
+
+11)docker ps
+
+12)docker exec -it JAVA jshell
+
+13)aaddition code
+
+int a = 10
+int b = 20
+System.out.println(a+b)
