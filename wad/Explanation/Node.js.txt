@@ -1,0 +1,50 @@
+This code demonstrates how to use Node.js and the Express framework to create a basic web server that serves static files (HTML and CSS) to a browser.  
+
+Line-by-Line Explanation
+1. Environment Setup (Commands)
+
+node -v & npm -v: These check the installed versions of Node.js and the Node Package Manager (NPM) to ensure the environment is ready.  
+
+
+npm init -y: Initializes a new Node.js project by creating a package.json file with default settings.  
+
+
+npm install express: Downloads and installs the Express library, which simplifies server creation in Node.js.  
+
+
+node server.js: Executes the JavaScript file to start the web server.  
+
+2. The Server Logic (server.js)
+
+const express = require('express');: Imports the Express module into the script.  
+
+
+const app = express();: Creates an instance of an Express application.  
+
+
+app.use(express.static(__dirname));: This is "middleware" that tells the server to serve files (like index.html) directly from the current folder (__dirname).  
+
+
+app.listen(3000, ...): Starts the server and tells it to "listen" for incoming web requests on port 3000.  
+
+
+http://localhost:3000: This is the local address you type into a browser to view the running website.  
+
+3. The Frontend (index.html & style.css)
+
+<link rel="stylesheet" href="style.css">: Links the HTML structure to the CSS design file.  
+
+
+background-color: lightblue;: Sets the overall background color of the webpage.  
+
+
+text-align: center;: Centers the text and elements horizontally on the screen.  
+
+Related Concepts and "More Things to Know"
+What is Express?: While Node.js can create servers on its own, Express is a framework that handles the "boilerplate" code, making it much faster to define routes and handle files.
+
+Static vs. Dynamic: A "static" website sends the exact same file to every user. A "dynamic" site (like a dashboard) would use Node.js to pull data from a database before sending it to the user.
+
+Port Numbers: Port 3000 is a common choice for development. In a real-world production environment, web traffic usually goes through port 80 (HTTP) or 443 (HTTPS).
+
+Middleware: The app.use() function represents middleware. It is a function that has access to the request and response objects, allowing you to process data or serve files before the final response is sent.

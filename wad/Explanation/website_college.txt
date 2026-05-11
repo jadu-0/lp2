@@ -1,0 +1,43 @@
+This final practical focuses on the fundamental structure of a multi-page website using standard HTML tags and a custom CSS stylesheet. It demonstrates how to maintain a consistent layout (header, navigation, and content box) across different pages.
+
+Line-by-Line Explanation
+1. HTML Structure (index.html, about.html, contact.html)
+
+<!DOCTYPE html>: Declares the document type as HTML5, ensuring the browser renders the page correctly.  
+
+
+<link rel="stylesheet" href="style.css">: Links the HTML file to an external CSS file so that all pages share the same design and colors.  
+
+<h1>: Used as the main page heading. In this code, it displays the college name or the page title (e.g., "About College").  
+
+
+<nav>: A semantic HTML tag that wraps the navigation links, helping search engines and screen readers identify the menu.  
+
+<a href="index.html">: An anchor tag used for navigation. The href attribute specifies the destination file.  
+
+
+<div class="box">: A container used to wrap the main content of each page, making it easier to apply specific styling like margins and background colors.  
+
+2. CSS Styling (style.css)
+body { font-family: Arial; }: Sets the default font for the entire website to Arial for better readability.  
+
+
+text-align: center;: Centers all text and inline elements within the body of the page.  
+
+h1 { background: #003366; color: white; }: Applies a dark blue background and white text to the main heading to make it stand out.  
+
+nav a { text-decoration: none; }: Removes the default underline from the navigation links to create a cleaner look.  
+
+.box { margin: 20px auto; width: 60%; }: Centers the content box on the page by setting the left and right margins to auto and restricting the width to 60% of the screen.  
+
+
+border-radius: 10px;: Rounds the corners of the content box for a modern appearance.  
+
+Related Concepts and "More Things to Know"
+External vs. Internal CSS: This practical uses External CSS. This is the best practice because you can change the look of the entire website by editing just one file (style.css), rather than updating every individual HTML page.
+
+Semantic HTML: Tags like <nav>, <h1>, and <body> describe the meaning of the content, which is crucial for SEO (Search Engine Optimization) and accessibility for disabled users.
+
+The Box Model: Every element in CSS is considered a box. The .box class demonstrates the use of Padding (space inside the box), Margin (space outside the box), and Border-radius (the shape of the corners).
+
+Relative Linking: Because the files are in the same folder, the code uses simple file names (like about.html) instead of full URLs. This makes the project portable; you can move the folder to any computer and it will still work.
